@@ -11,7 +11,7 @@ intro_text = """
                                                                                     
 """
 
-credits_text = "copyright Talon Bragg 2018 under the MIT License"
+credits_text = "© Talon Bragg 2018 under the MIT License"
 
 class printcolors:
     HEADER = '\033[95m'
@@ -26,9 +26,9 @@ class printcolors:
 correct_password = 0
 print (printcolors.OKGREEN + intro_text + printcolors.ENDC)
 print("\n" + printcolors.OKBLUE + credits_text + printcolors.ENDC + "\n")
-hostname = input('hostname: ')
-username = input('username: ')
-wordlist = input('wordlist: ')
+hostname = input(printcolors.OKBLUE + 'hostname: ' + printcolors.ENDC)
+username = input(printcolors.OKBLUE + 'username: ' + printcolors.ENDC)
+wordlist = input(printcolors.OKBLUE + 'wordlist: ' + printcolors.ENDC)
 wordlist = open(wordlist, "r")
 
 for password in wordlist:
