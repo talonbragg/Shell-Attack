@@ -26,8 +26,8 @@ class printcolors:
 correct_password = 0
 print (printcolors.OKGREEN + intro_text + printcolors.ENDC)
 print("\n" + printcolors.OKBLUE + credits_text + printcolors.ENDC + "\n")
-hostname = input(printcolors.OKBLUE + 'hostname: ' + printcolors.ENDC)
-username = str(input(printcolors.OKBLUE + 'username: ' + printcolors.ENDC))
+hostname = str(input(printcolors.OKBLUE + 'hostname: ' + printcolors.ENDC))
+username = input(printcolors.OKBLUE + 'username: ' + printcolors.ENDC)
 wordlist = input(printcolors.OKBLUE + 'wordlist: ' + printcolors.ENDC)
 wordlist = open(wordlist, "r")
 
