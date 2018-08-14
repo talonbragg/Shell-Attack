@@ -4,7 +4,7 @@ a brute force tool for ssh servers written in python.
 ## Installation
 
 Clone Repo:
-`$ git clone https://talonbragg/Shell-Attack.git`
+`$ git clone https://github.com/talonbragg/Shell-Attack.git`
 
 Go to Shell-Attack directory:
 `$ cd Shell-Attack`
