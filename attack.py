@@ -11,6 +11,8 @@ intro_text = """
                                                                                     
 """
 
+credits_text = "© Talon Bragg 2018"
+
 class printcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[36m'
@@ -23,6 +25,7 @@ class printcolors:
 
 correct_password = 0
 print (printcolors.OKGREEN + intro_text + printcolors.ENDC)
+print("\n" + printcolors.OKBLUE + credits_text + printcolors.ENDC)
 hostname = input(printcolors.OKBLUE + 'hostname: ' + printcolors.ENDC)
 username = input(printcolors.OKBLUE + 'username: ' + printcolors.ENDC)
 wordlist = input(printcolors.OKBLUE + 'wordlist: ' + printcolors.ENDC)
