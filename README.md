@@ -1,5 +1,7 @@
 # Shell-Attack
 a brute force tool for ssh servers written in python.
+
+*This is currently written for python 3.x but python 2.x support will be coming soon.*
  
 ## Installation
 
