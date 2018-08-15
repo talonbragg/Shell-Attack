@@ -47,6 +47,7 @@ for password in wordlist:
     s.logout()
     print(printcolors.OKGREEN + '[+]Password Found: %' + printcolors.ENDC % password)
     correct_password += 1
+    break;
   except (pxssh.ExceptionPxssh):
     print(printcolors.FAIL + "[-]Incorrect password: " + printcolors.ENDC + "%s, trying again..." % password)
 print(printcolors.OKBLUE + "Correct passwords found: " + printcolors.ENDC + str(correct_password))
