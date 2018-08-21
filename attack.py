@@ -1,3 +1,7 @@
+import click
+import src/bruteftp
+import src/brutessh
+
 class printcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[36m'
@@ -8,6 +12,17 @@ class printcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-import src.brutessh.py
+intro_text = """
 
-import src.bruteftp.py
+ ,---.  ,--.            ,--.,--.      ,---.    ,--.    ,--.                ,--.
+'   .-' |  ,---.  ,---. |  ||  |     /  O  \ ,-'  '-.,-'  '-. ,--,--. ,---.|  |,-.
+`.  `-. |  .-.  || .-. :|  ||  |    |  .-.  |'-.  .-''-.  .-'' ,-.  || .--'|     /
+.-'    ||  | |  |\   --.|  ||  |    |  | |  |  |  |    |  |  \ '-'  |\ `--.|  \  \
+`-----' `--' `--' `----'`--'`--'    `--' `--'  `--'    `--'   `--`--' `---'`--'`--'
+
+"""
+
+credits_text = "© Talon Bragg 2018 under the MIT License"
+
+print (printcolors.OKGREEN + intro_text + printcolors.ENDC)
+print("\n" + printcolors.OKBLUE + credits_text + printcolors.ENDC + "\n")
